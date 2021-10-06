@@ -1,7 +1,7 @@
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "tokyonight"
-vim.g.tokyonight_style = "storm"
+lvim.colorscheme = "gruvbox"
+vim.g.tokyonight_style = "night"
 vim.opt.shiftwidth = 4
 -- lvim.transparent_window = true
 lvim.leader = "space"
@@ -10,6 +10,8 @@ lvim.keys.normal_mode["<S-y>"] = "y$"
 lvim.keys.normal_mode["<F9>"] = "y$"
 vim.opt.relativenumber = true
 vim.opt.cursorline = false
+-- vim.opt.spell = true
+vim.g.dashboard_disable_statusline = 1
 lvim.keys.normal_mode["<F5>"] = ":TermExec cmd='clear; g++ % &&./a.out && rm a.out'<cr>"
 lvim.builtin.telescope.defaults.file_ignore_patterns = { ".git", "node_modules" }
 lvim.builtin.dashboard.active = true
@@ -138,6 +140,7 @@ lvim.plugins = {
             require("user.hop").config()
         end,
     },
+    { "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } },
 }
 
 lvim.builtin.dashboard.custom_header = {
