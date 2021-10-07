@@ -28,9 +28,6 @@ lvim.lang.javascript.linters = { { exe = "eslint" } }
 lvim.lang.javascriptreact.linters = lvim.lang.javascript.linter
 lvim.lang.javascriptreact.formatters = lvim.lang.javascript.formatters
 lvim.lang.lua.formatters = { { exe = "stylua", args = { "--indent-type", "Spaces" } } }
-lvim.autocommands.custom_groups = {
-    { "BufNewFile, BufRead", ".jsx", "set filetype=javascriptreact" }
-}
 
 require("user.builtin").config()
 require("user.plugins").config()

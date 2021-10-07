@@ -28,9 +28,10 @@ M.config = function()
     vim.opt.pumblend = 10
     vim.opt.joinspaces = false
     vim.opt.list = true
-    vim.opt.shiftwidth = 4
+    vim.o.shiftwidth = 4
     vim.opt.expandtab = true
-    vim.opt.tabstop = 4
+    vim.o.tabstop = 4
+    vim.bo.tabstop = 4
 end
 
 return M
