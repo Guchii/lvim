@@ -22,8 +22,9 @@ vim.cmd([[
     vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 ]])
 
-lvim.lang.html.formatters = { { exe = "prettier" } }
-lvim.lang.javascript.formatters = { { exe = "prettier" } }
+local prettierFormatter = {exe = "prettier"}
+lvim.lang.html.formatters = { prettierFormatter }
+lvim.lang.javascript.formatters = { prettierFormatter }
 lvim.lang.javascript.linters = { { exe = "eslint" } }
 lvim.lang.javascriptreact.linters = lvim.lang.javascript.linter
 lvim.lang.javascriptreact.formatters = lvim.lang.javascript.formatters

@@ -21,10 +21,9 @@ M.config = function()
     }
     vim.o.foldnestmax = 3
     vim.o.foldminlines = 1
-    vim.opt.guifont = "FiraCode Nerd Font:h13"
     vim.opt.cmdheight = 1
     vim.g.dashboard_enable_session = 0
-    vim.g.dashboard_disable_statusline = 1
+    vim.g.dashboard_disable_statusline = 0
     vim.opt.pumblend = 10
     vim.opt.joinspaces = false
     vim.opt.list = true

@@ -22,12 +22,10 @@ M.config = function()
             "#7dcfff",
         },
     }
-
     lvim.builtin.treesitter.autotag.enable = true
-
     lvim.builtin.dashboard.custom_header = {
         "                                                       ",
-        "                                                       ",
+        " nice                                                  ",
         " ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗",
         " ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║",
         " ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║",
