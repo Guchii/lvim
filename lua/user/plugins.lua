@@ -93,19 +93,19 @@ M.config = function()
                 vim.g.presence_blacklist = {}
             end,
         },
-        {
-            "tzachar/cmp-tabnine",
-            config = function()
-                local tabnine = require("cmp_tabnine.config")
-                tabnine:setup({
-                    max_lines = 1000,
-                    max_num_results = 20,
-                    sort = true,
-                })
-            end,
-            run = "./install.sh",
-            requires = "hrsh7th/nvim-cmp",
-        },
+--         {
+--             "tzachar/cmp-tabnine",
+--             config = function()
+--                 local tabnine = require("cmp_tabnine.config")
+--                 tabnine:setup({
+--                     max_lines = 1000,
+--                     max_num_results = 20,
+--                     sort = true,
+--                 })
+--             end,
+--             run = "./install.sh",
+--             requires = "hrsh7th/nvim-cmp",
+--         },
         {
             "IndianBoy42/hop.nvim",
             event = "BufRead",
